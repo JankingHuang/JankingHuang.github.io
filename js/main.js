@@ -15,10 +15,11 @@
         $('.article').lightGallery({ selector: '.gallery-item' });
     }
     if (typeof $.fn.justifiedGallery === 'function') {
-        if ($('.justified-gallery > p > .gallery-item').length) {
-            $('.justified-gallery > p > .gallery-item').unwrap();
-        }
-        $('.justified-gallery').justifiedGallery();
+       // if ($('.justified-gallery > p > .gallery-item').length) {
+        //    $('.justified-gallery > p > .gallery-item').unwrap();
+        //}
+        //$('.justified-gallery').justifiedGallery();
+         $('.justified-gallery').justifiedGallery({rowHeight:400, margins:4});
     }
 
     if (!$('.columns .column-right-shadow').children().length) {
