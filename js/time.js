@@ -1,4 +1,4 @@
-var now = new Date(); 
+    var now = new Date(); 
     function createtime() { 
         var grt= new Date("08/10/2018 17:38:00");//在此处修改你的建站时间
         now.setTime(now.getTime()+250); 
