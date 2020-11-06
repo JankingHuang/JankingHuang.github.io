@@ -6,7 +6,7 @@
   <link href="http://yoursite.com/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2020-11-02T08:59:59.145Z</updated>
+  <updated>2020-11-06T13:16:03.295Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -15,6 +15,29 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>C++Lambda表达式</title>
+    <link href="http://yoursite.com/2020/11/06/C-Lambda%E8%A1%A8%E8%BE%BE%E5%BC%8F/"/>
+    <id>http://yoursite.com/2020/11/06/C-Lambda%E8%A1%A8%E8%BE%BE%E5%BC%8F/</id>
+    <published>2020-11-06T12:59:34.000Z</published>
+    <updated>2020-11-06T13:16:03.295Z</updated>
+    
+    <content type="html"><![CDATA[<p>今天的每日一题，也是比较简单的！🎊<br>但我，查看官方题解时，我惊呆了。</p><a id="more"></a><p>我看到了如下代码：</p><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">sort(arr.<span class="built_in">begin</span>(), arr.<span class="built_in">end</span>(), [&amp;](<span class="keyword">int</span> x, <span class="keyword">int</span> y) &#123;</span><br><span class="line">    <span class="keyword">if</span> (<span class="built_in">bit</span>[x] &lt; <span class="built_in">bit</span>[y])</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="keyword">return</span> <span class="literal">true</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">if</span> (<span class="built_in">bit</span>[x] &gt; <span class="built_in">bit</span>[y])</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="keyword">return</span> <span class="literal">false</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> x &lt; y;</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure><p>我看了半天，没反应过来🤣，看完评论才知道是C++11 的新特性 Lambda表达式。</p><h2 id="Lambda表达式形式"><a href="#Lambda表达式形式" class="headerlink" title="Lambda表达式形式"></a>Lambda表达式形式</h2><blockquote><p>[外部变量访问说明符](参数列表)-&gt;返回值类型{</p><p>语句快</p><p>}</p></blockquote><ul><li>外部访问方式： =表示允许更改外部变量，&amp;不允许更改外部变量</li><li>参数列表：和普通函数一样</li></ul><h2 id="示例"><a href="#示例" class="headerlink" title="示例"></a>示例</h2><ul><li>代码：<pre><code class="C++"><span class="keyword">int</span> a[<span class="number">4</span>] = {<span class="number">11</span>, <span class="number">2</span>, <span class="number">33</span>, <span class="number">4</span>};sort(a, a+<span class="number">4</span>, [=](<span class="keyword">int</span> x, <span class="keyword">int</span> y) -&gt; <span class="keyword">bool</span> {   <span class="keyword">return</span> x%<span class="number">10</span> &lt; y%<span class="number">10</span>;   } );for_each(a, a+<span class="number">4</span>, [=](<span class="keyword">int</span> x) {   <span class="built_in">cout</span> &lt;&lt; x &lt;&lt; <span class="string">" "</span>;   } );</code></pre></li><li>结果： 11 2 33 4</li></ul><h2 id="外部变量"><a href="#外部变量" class="headerlink" title="外部变量"></a>外部变量</h2><ul><li>“外部变量访问方式说明符”还可以有更加复杂和灵活的用法。</li><li>[=, &amp;x, &amp;y]表示外部变量 x、y 的值可以被修改，其余外部变量不能被修改；</li><li>[&amp;, x, y]表示除 x、y 以外的外部变量，值都可以被修改。</li></ul><h2 id="Lambda表达式作用"><a href="#Lambda表达式作用" class="headerlink" title="Lambda表达式作用"></a>Lambda表达式作用</h2><ul><li><p>使用 STL 时，往往会大量用到函数对象，为此要编写很多函数对象类。有的函数对象类只用来定义了一个对象，而且这个对象也只使用了一次，编写这样的函数对象类就有点浪费。</p></li><li><p>说白了，就使用便捷👋</p></li></ul>]]></content>
+    
+    
+    <summary type="html">&lt;p&gt;今天的每日一题，也是比较简单的！🎊&lt;br&gt;但我，查看官方题解时，我惊呆了。&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="C++" scheme="http://yoursite.com/categories/C/"/>
+    
+    
+    <category term="Leetcode" scheme="http://yoursite.com/tags/Leetcode/"/>
+    
+    <category term="C++" scheme="http://yoursite.com/tags/C/"/>
+    
+  </entry>
   
   <entry>
     <title>我与Linux的爱恨情仇</title>
@@ -475,33 +498,6 @@
     <category term="Manjaro" scheme="http://yoursite.com/tags/Manjaro/"/>
     
     <category term="Shell" scheme="http://yoursite.com/tags/Shell/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>初次遇见，Howdy</title>
-    <link href="http://yoursite.com/2020/07/11/%E5%88%9D%E6%AC%A1%E9%81%87%E8%A7%81%EF%BC%8CHowdy/"/>
-    <id>http://yoursite.com/2020/07/11/%E5%88%9D%E6%AC%A1%E9%81%87%E8%A7%81%EF%BC%8CHowdy/</id>
-    <published>2020-07-11T04:09:52.000Z</published>
-    <updated>2020-10-26T14:33:11.452Z</updated>
-    
-    <content type="html"><![CDATA[<p>自从上次双11，剁手买来Lenovo 小新 Pro 13 电脑后，我就天天想着安装Arch Linux系统 😄，可以是刚好临近毕业。毕业文档要用word写，我也很无奈，毕竟Linux 中对word支持不是很好 👎。</p><a id="more"></a><p>就在前不久，我入手啦Arch的儿子。就是Manjaro(基于arch开发)，我终于体会到啦，安装系统过程的简便性。(好评 👍 👍)。但是我的Windows Hello功能就废了。</p><p><img src="/img/manjaro.jpg" alt="系统截图"></p><h2 id="初识Howdy"><a href="#初识Howdy" class="headerlink" title="初识Howdy"></a>初识Howdy</h2><p>不久就我逛Github的时候就发现这个仓库，这就令我非常Amazing呀。<br>对于Arch 派，一条命令就能安装。</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">yay -S howdy</span><br></pre></td></tr></table></figure><p>arch派就是这么简单，欢迎加入 🇯🇴<br>不过重点不在这里，因为国内网络的问题(我也不想多说，懂的自然懂 ☕️)<br>下载一个包特别慢，我就尝试啦proxychains。结果yay不支持 😢</p><h2 id="YAY-重造"><a href="#YAY-重造" class="headerlink" title="YAY 重造"></a>YAY 重造</h2><p>查了老半天发现，需要重新编译yay才行。下面直接开干吧！ 👷</p><h3 id="安装gcc-go"><a href="#安装gcc-go" class="headerlink" title="安装gcc-go"></a>安装gcc-go</h3><p>需要使用gcc-go 重新编译</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">yay -S gcc-go</span><br></pre></td></tr></table></figure><h3 id="克隆yay源码并编译"><a href="#克隆yay源码并编译" class="headerlink" title="克隆yay源码并编译"></a>克隆yay源码并编译</h3><p>这里就使用git</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">git <span class="built_in">clone</span> https://aur.archlinux.org/yay.git</span><br><span class="line"><span class="built_in">cd</span> yay</span><br><span class="line">makepkg -si</span><br></pre></td></tr></table></figure><h3 id="克隆proxychains-ng-并编译"><a href="#克隆proxychains-ng-并编译" class="headerlink" title="克隆proxychains-ng 并编译"></a>克隆proxychains-ng 并编译</h3><p>最后一条命令可以不执行，懂得都懂 😏</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">git <span class="built_in">clone</span> https://github.com/rofl0r/proxychains-ng.git</span><br><span class="line"><span class="built_in">cd</span> proxychains-ng</span><br><span class="line">./configure</span><br><span class="line">make &amp;&amp; make install</span><br><span class="line">cp ./src/proxychains.conf /etc/proxychains.conf</span><br><span class="line"><span class="built_in">cd</span> .. &amp;&amp; rm -rf proxychains-ng</span><br></pre></td></tr></table></figure><h3 id="配置proxychains"><a href="#配置proxychains" class="headerlink" title="配置proxychains"></a>配置proxychains</h3><p>路径为/etc/proxychains.conf<br>使用vim修改配置文件</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">vim /etc/proxychains.conf</span><br></pre></td></tr></table></figure><p>将</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">socks4 127.0.0.1 9095</span><br></pre></td></tr></table></figure><p>改为</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">socks5 127.0.0.1 1080</span><br></pre></td></tr></table></figure><p>端口有可能有差异，与代理软件设定的端口一致就可以。<br>到这里yay就重新编译完成啦。</p><h2 id="Howdy安装"><a href="#Howdy安装" class="headerlink" title="Howdy安装"></a>Howdy安装</h2><p>在需要使用代理的命令上加上 proxychains4</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">proxychains4 yay -S howdy</span><br></pre></td></tr></table></figure><p>到这里就结束啦，howdy的具体配置在Arch wiki都有。而且非常的详细，我就不多说啦！！！</p>]]></content>
-    
-    
-    <summary type="html">&lt;p&gt;自从上次双11，剁手买来Lenovo 小新 Pro 13 电脑后，我就天天想着安装Arch Linux系统 😄，可以是刚好临近毕业。毕业文档要用word写，我也很无奈，毕竟Linux 中对word支持不是很好 👎。&lt;/p&gt;</summary>
-    
-    
-    
-    <category term="Linux之路" scheme="http://yoursite.com/categories/Linux%E4%B9%8B%E8%B7%AF/"/>
-    
-    
-    <category term="Arch" scheme="http://yoursite.com/tags/Arch/"/>
-    
-    <category term="Manjaro" scheme="http://yoursite.com/tags/Manjaro/"/>
-    
-    <category term="代理" scheme="http://yoursite.com/tags/%E4%BB%A3%E7%90%86/"/>
-    
-    <category term="人脸识别" scheme="http://yoursite.com/tags/%E4%BA%BA%E8%84%B8%E8%AF%86%E5%88%AB/"/>
     
   </entry>
   
