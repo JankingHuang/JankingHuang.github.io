@@ -35,9 +35,9 @@
     
     <category term="Linux" scheme="http://yoursite.com/tags/Linux/"/>
     
-    <category term="C51" scheme="http://yoursite.com/tags/C51/"/>
-    
     <category term="Development Environment" scheme="http://yoursite.com/tags/Development-Environment/"/>
+    
+    <category term="C51" scheme="http://yoursite.com/tags/C51/"/>
     
   </entry>
   
