@@ -6,7 +6,7 @@
   <link href="http://yoursite.com/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2021-02-24T10:14:51.664Z</updated>
+  <updated>2021-02-26T10:41:33.803Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -15,6 +15,29 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>编译原理之一</title>
+    <link href="http://yoursite.com/2021/02/26/%E7%BC%96%E8%AF%91%E5%8E%9F%E7%90%861/"/>
+    <id>http://yoursite.com/2021/02/26/%E7%BC%96%E8%AF%91%E5%8E%9F%E7%90%861/</id>
+    <published>2021-02-26T09:46:46.000Z</published>
+    <updated>2021-02-26T10:41:33.803Z</updated>
+    
+    <content type="html"><![CDATA[<p>今天写题目的时候遇到了<code>有限状态机</code>这个概念。<br>我也不懂，查完资料后，就写个博客记录一下吧！</p><a id="more"></a><p><code>编译</code>过程的前三个阶段会进行<code>词法分析</code>、<code>语法分析</code>、<code>语义分析</code>。</p><h2 id="词法分析"><a href="#词法分析" class="headerlink" title="词法分析"></a>词法分析</h2><p>编译器的第一项工作就是<code>词法分析</code>，就像阅读文章一样,文章是由一个个的文字</p><p>组成的。程序处理也一样,只是叫做<code>词法记号</code>,英文叫<code>Token</code>。</p><h3 id="生成过程"><a href="#生成过程" class="headerlink" title="生成过程"></a>生成过程</h3><p>利用<code>词法分析器</code>可以生成<code>分词规则</code>,比如 <code>Lex</code>。</p><p>这些生成工具是基于一些规则来工作的,这些规则用<code>正则文法</code>表达。</p><p>生成工具可以读入<code>正则表达式</code>,生成一种叫<code>有限自动机</code>的算法,来完成具体的<code>词法分析</code>工作。</p><blockquote><p> 符合正则文法的表达式称为<code>正则表达式</code>。</p></blockquote><blockquote><p><code>有限自动机</code>是有限个状态的自动机器。</p><p>拿抽水马桶举例,它分为<strong>两个状态</strong>:“注水”和“水满”。</p><p>摁下冲马桶的按钮,它转到“<strong>注水”状态</strong>,而浮球上升到一定高度,就会把注水阀门关闭,它转到<strong>“水满”状态</strong>。</p></blockquote><h2 id="语法分析"><a href="#语法分析" class="headerlink" title="语法分析"></a>语法分析</h2><p>这是编译器的第二项工作，<code>词法分析</code>是识别一个个的<code>单词</code>,</p><p>而<code>语法分析</code>就是在<code>词法分析</code>的基础上识别出<code>程序的语法结构</code>。</p><p>这个结构是一个<code>树状结构</code>,是计算机容易理解和执行的。</p><h3 id="抽象语法树-AST"><a href="#抽象语法树-AST" class="headerlink" title="抽象语法树(AST)"></a>抽象语法树(AST)</h3><p>语法分析过程,就是构造这么一棵树。</p><p>一个程序就是一棵树,这棵树叫<code>做抽象语法树</code>(Abstract Syntax Tree,AST)。</p><p>树的每个节点是一个<code>语法单元</code>,<strong>这个单元的构成规则就叫“语法”</strong>。</p><blockquote><p> 这里可以生成直观的JS语法树：<a href="https://resources.jointjs.com/demos/javascript-ast">https://resources.jointjs.com/demos/javascript-ast</a> </p></blockquote><p><img src="/img/tree.svg" alt="AST"></p><blockquote><p>了解更多的AST相关的内容: <a href="http://icps.u-strasbg.fr/~pop/gcc-ast.html">http://icps.u-strasbg.fr/~pop/gcc-ast.html</a></p></blockquote><h2 id="语义分析"><a href="#语义分析" class="headerlink" title="语义分析"></a>语义分析</h2><p>语义分析是消除语义模糊,生成一些属性信息,让计算机能够依据这些信息生成目标代<br>码。</p><ul><li>某个表达式的计算结果是什么数据类型？</li><li>如果有数据类型不匹配的情况。</li><li>如果在一个代码块的内部和外部有相同名称的变量。</li></ul><p><strong>语义分析工作的某些成果,会作为属性标注在抽象语法树上。</strong></p><p>以上就是编译器的前三个阶段的过程!!!</p>]]></content>
+    
+    
+    <summary type="html">&lt;p&gt;今天写题目的时候遇到了&lt;code&gt;有限状态机&lt;/code&gt;这个概念。&lt;br&gt;我也不懂，查完资料后，就写个博客记录一下吧！&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="编译原理" scheme="http://yoursite.com/categories/%E7%BC%96%E8%AF%91%E5%8E%9F%E7%90%86/"/>
+    
+    
+    <category term="计算机基础知识" scheme="http://yoursite.com/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/"/>
+    
+    <category term="编译原理" scheme="http://yoursite.com/tags/%E7%BC%96%E8%AF%91%E5%8E%9F%E7%90%86/"/>
+    
+  </entry>
   
   <entry>
     <title>STL之Vectors</title>
@@ -453,31 +476,6 @@
     
     
     <summary type="html">&lt;p&gt;昨天，我下载好了kali镜像后.&lt;br&gt;今天,反手就是一个条命令把VirtualBox安装好了,&lt;br&gt;结果可想而知🤣&lt;/p&gt;</summary>
-    
-    
-    
-    <category term="Linux之路" scheme="http://yoursite.com/categories/Linux%E4%B9%8B%E8%B7%AF/"/>
-    
-    
-    <category term="Arch" scheme="http://yoursite.com/tags/Arch/"/>
-    
-    <category term="Manjaro" scheme="http://yoursite.com/tags/Manjaro/"/>
-    
-    <category term="Linux" scheme="http://yoursite.com/tags/Linux/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>qBittorrent下载加速</title>
-    <link href="http://yoursite.com/2020/08/13/qBittorrent%E4%B8%8B%E8%BD%BD%E5%8A%A0%E9%80%9F/"/>
-    <id>http://yoursite.com/2020/08/13/qBittorrent%E4%B8%8B%E8%BD%BD%E5%8A%A0%E9%80%9F/</id>
-    <published>2020-08-13T03:10:05.000Z</published>
-    <updated>2020-10-26T14:32:57.732Z</updated>
-    
-    <content type="html"><![CDATA[<p>Linux 下面如何下载Bittorrent的资源呢🤔🤔？？<br>如果是在Windows下面,迅雷🐦一般是第一选择．</p><a id="more"></a><p>今天，我试图下载Kali Linux 镜像的时候，发现官方提供了，BitTorrent下载方式．<br>我就打算在我的Linux 下面尝试一下．结果下载速度非常快😝</p><h2 id="安装qBittorrent"><a href="#安装qBittorrent" class="headerlink" title="安装qBittorrent"></a>安装qBittorrent</h2><p>qBittorrent是一个跨平台的自由BitTorrent客户端，其图形用户界面是由Qt所写成的．</p><blockquote><p>下载链接：<a href="https://www.qbittorrent.org/download.php">https://www.qbittorrent.org/download.php</a></p></blockquote><p>等待下载完成后，就可以安装啦．</p><h3 id="Arch系列"><a href="#Arch系列" class="headerlink" title="Arch系列"></a>Arch系列</h3><p>如果是Arch Linux ，或者是基于Arch Linux 的系统</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo pacman -S qbittorrent</span><br></pre></td></tr></table></figure><p>可以使用上述命令直接安装．</p><h2 id="加入Tracker-服务器"><a href="#加入Tracker-服务器" class="headerlink" title="加入Tracker 服务器"></a>加入Tracker 服务器</h2><p>Tracker服务器，主要目的是为了，提升下载速度.</p><p>由于tracker对BT下载起到客户端协调和调控的重要作用，所以一旦被封锁会严重影响BT下载，如2009年12月，中华人民共和国广电总局对BTchina一系列的tracker进行打击，因此也促使新BT客户端支持DHT网络实现无中心tracker，分布式资源分享的影响<br>需要了解更多Tracker服务器，可以自行搜索．</p><h2 id="qBittorrent-添加tracker服务器"><a href="#qBittorrent-添加tracker服务器" class="headerlink" title="qBittorrent 添加tracker服务器"></a>qBittorrent 添加tracker服务器</h2><p><a href="/img/tra.png">添加tracker服务器</a></p><ul><li>点击Preferences</li><li>找到Bittorent选项</li><li>勾选　automatically add thes trackers to new downloads 选项</li><li>粘贴tracker服务器列表，即可点击apply</li></ul><blockquote><p>Note: qBittorrent添加完成tracker服务器后需要，重新启动软件．</p></blockquote><h2 id="tracker服务器列表"><a href="#tracker服务器列表" class="headerlink" title="tracker服务器列表"></a>tracker服务器列表</h2><ul><li>Best Tracker list:<blockquote><p>　<a href="https://trackerslist.com/best.txt">https://trackerslist.com/best.txt</a></p></blockquote></li><li>All Tracker list:<blockquote><p><a href="https://trackerslist.com/all.txt">https://trackerslist.com/all.txt</a></p></blockquote></li><li>Http(s) Tracker list:<blockquote><p><a href="https://trackerslist.com/http.txt">https://trackerslist.com/http.txt</a></p></blockquote></li></ul><p>这些是我日程使用的Tracker服务器列表，这个仓库列表，已有人发布到github仓库中．<br>这里我就不给出仓库连接了，在我的收藏的仓库中可以找到😝</p><p>关于Bittorent 就分享到这里吧，DHT的中文全称是分布式哈希表(distributed has table 的缩写)，这可以避免中心tracker服务器的不能工作而导致这个系统的瘫痪．是一些天才的杰作．</p>]]></content>
-    
-    
-    <summary type="html">&lt;p&gt;Linux 下面如何下载Bittorrent的资源呢🤔🤔？？&lt;br&gt;如果是在Windows下面,迅雷🐦一般是第一选择．&lt;/p&gt;</summary>
     
     
     
