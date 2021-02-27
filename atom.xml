@@ -6,7 +6,7 @@
   <link href="http://yoursite.com/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2021-02-26T10:41:33.803Z</updated>
+  <updated>2021-02-27T05:24:52.686Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -15,6 +15,27 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>计算机基本知识</title>
+    <link href="http://yoursite.com/2021/02/27/%E8%AE%A1%E7%AE%97%E6%9C%BA%E9%9B%B6%E5%9F%BA%E7%A1%80%E5%85%A5%E9%97%A8/"/>
+    <id>http://yoursite.com/2021/02/27/%E8%AE%A1%E7%AE%97%E6%9C%BA%E9%9B%B6%E5%9F%BA%E7%A1%80%E5%85%A5%E9%97%A8/</id>
+    <published>2021-02-27T03:18:22.000Z</published>
+    <updated>2021-02-27T05:24:52.686Z</updated>
+    
+    <content type="html"><![CDATA[<p>别问我，为啥要写这么基础的博文。我也不知道！！！</p><a id="more"></a><h2 id="计算机发展的四个阶段"><a href="#计算机发展的四个阶段" class="headerlink" title="计算机发展的四个阶段"></a>计算机发展的四个阶段</h2><ul><li><p>1946 - 1957： 电子管计算机(ENIAC)，第二次世界大战是催化机。</p></li><li><p>1957-1964  ： 晶体管计算机(TX-0 ,PDP-1)，贝尔实验室的三个科学家发明了晶体管。</p><blockquote><p>TX-0: 来自MIT林肯实验室</p></blockquote></li><li><p>1964-1980：集成电路计算机(诞生了操作系统) ， 德州仪器的工程师发明了集成电路(IC)</p><blockquote><p>IBM 7094 1401 操作系统，两个系无法兼容，后来推出System/360(操作系统的雏形)</p></blockquote></li><li><p>1980- ： 超大规模集成电路计算机</p></li></ul><p><strong>1TFlop/s : 每秒一万亿次浮点计算</strong> </p><h2 id="计算机的体系与结"><a href="#计算机的体系与结" class="headerlink" title="计算机的体系与结"></a>计算机的体系与结</h2><h3 id="冯诺依慢体系"><a href="#冯诺依慢体系" class="headerlink" title="冯诺依慢体系"></a>冯诺依慢体系</h3><p>将程序指令和数据一起存储的计算机设计概念结构</p><p><strong>存储程序指令，设计通用电路。</strong></p><p>存储器、控制器、运算器、输入设备、输出设备</p><p><img src="/img/image-20210227120307424.png" alt="image-20210227120307424"></p><p>CPU和存储速率之间的问题无法调和，称为“冯诺依曼瓶颈”</p><p><img src="/img/image-20210227120618198.png" alt="image-20210227120618198"></p><h2 id="计算机的层次"><a href="#计算机的层次" class="headerlink" title="计算机的层次"></a>计算机的层次</h2><p><img src="/img/image-20210227121147245.png" alt="image-20210227121147245"></p><h3 id="硬件逻辑层"><a href="#硬件逻辑层" class="headerlink" title="硬件逻辑层"></a>硬件逻辑层</h3><p>门、触发器等逻辑电路组成，属于EE的领域。</p><h3 id="微程序机器层"><a href="#微程序机器层" class="headerlink" title="微程序机器层"></a>微程序机器层</h3><ul><li>编程语言是微指令集。</li><li>微指令所组成的微程序直接交由硬件执行。</li></ul><h3 id="传统机器层"><a href="#传统机器层" class="headerlink" title="传统机器层"></a>传统机器层</h3><ul><li>编程语言是CPU指令集(机器指令)。</li><li>编程语言和硬件是直接相关。</li><li>不同架构的CPU使用不同的CPU指令集。</li></ul><p><strong>一条机器指令对应一个微程序，一个微程序对应一组微指令</strong></p><h3 id="操作系统层"><a href="#操作系统层" class="headerlink" title="操作系统层"></a>操作系统层</h3><ul><li>向上提供了简易的操作界面。</li><li>向下对接了指令系统，管理硬件资源。 </li><li>操作系统层是在软件和硬件之间的适配层。</li></ul><h3 id="汇编语言层"><a href="#汇编语言层" class="headerlink" title="汇编语言层"></a>汇编语言层</h3><ul><li>编程语言是汇编语言。</li><li>汇编语言可以翻译成可以直接执行的机器语言。</li><li>完成翻译的过程的程序就是汇编器。</li></ul><h3 id="高级语言层"><a href="#高级语言层" class="headerlink" title="高级语言层"></a>高级语言层</h3><p>日常的编程语言，C/C++、Java、Golang等</p><h3 id="应用层"><a href="#应用层" class="headerlink" title="应用层"></a>应用层</h3><p>满足计算机针对某种用途而专门设计，office、ps</p><p><strong>分层的目的是便于理解</strong></p><h2 id="计算机的计算单位"><a href="#计算机的计算单位" class="headerlink" title="计算机的计算单位"></a>计算机的计算单位</h2><p><img src="/img/image-20210227122700698.png" alt="image-20210227122700698"></p><p>在物理成面，高低电平记录信息</p><p>理论上只认识0/1两种状态</p><p><img src="/img/image-20210227123633472.png" alt="image-20210227123633472"></p><p><img src="/img/image-20210227124043214.png" alt="image-20210227124043214"></p><h3 id="速度单位"><a href="#速度单位" class="headerlink" title="速度单位"></a>速度单位</h3><h4 id="网络速度"><a href="#网络速度" class="headerlink" title="网络速度"></a>网络速度</h4><ul><li>网络常用单位为(Mbps)</li><li>100 M/s = 100 Mbps = 100 Mbit/s = (100/8)MB/s = 12.5 MB/s</li></ul><h4 id="CPU速度"><a href="#CPU速度" class="headerlink" title="CPU速度"></a>CPU速度</h4><ul><li>CPU的速度一般体现为CPU的时钟频率</li><li>CPU的时钟频率的单位一般是赫兹(Hz)</li><li>主流CPU的时钟频率都是在2 GHz以上</li></ul><blockquote><p>Hz 每秒中的周期性变动重复次数的计量</p></blockquote><p><img src="/img/image-20210227125240303.png" alt="image-20210227125240303"></p><h2 id="字符与编码集"><a href="#字符与编码集" class="headerlink" title="字符与编码集"></a>字符与编码集</h2><h3 id="ASCII码"><a href="#ASCII码" class="headerlink" title="ASCII码"></a>ASCII码</h3><ul><li>使用7个bits 就可以表示</li><li>包含95个可打印字符</li><li>33个不可打印字符</li></ul><p><strong>很多应用或者国际中的符号都无法表示</strong></p><p>第一次对ASCII码进行扩充，7 bits-&gt;8 bits</p><h3 id="Extended-ASCII码"><a href="#Extended-ASCII码" class="headerlink" title="Extended ASCII码"></a>Extended ASCII码</h3><ul><li>有常见的数学运算符</li><li>带音标的欧洲字符</li><li>其它常用、表个符等</li></ul><p><img src="/img/image-20210227130007966.png" alt="image-20210227130007966"></p><h3 id="中文编码集"><a href="#中文编码集" class="headerlink" title="中文编码集"></a>中文编码集</h3><ul><li>GB2312(不符合国际编码)</li><li>GBK(兼容<code>GB2312</code> 、<code>ISO标准</code>，支持中日韩所有文字)</li></ul><h3 id="Unicode"><a href="#Unicode" class="headerlink" title="Unicode"></a>Unicode</h3><ul><li>统一码、万国码、单一码。</li><li>定义了世界通用的符号集，UTF-*实现了编码</li><li>UTF-8 以字节为单位对Unicode进行编码</li></ul><p><strong>兼容全球的字符集</strong></p>]]></content>
+    
+    
+    <summary type="html">&lt;p&gt;别问我，为啥要写这么基础的博文。我也不知道！！！&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="计算机基本知识" scheme="http://yoursite.com/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%9F%BA%E6%9C%AC%E7%9F%A5%E8%AF%86/"/>
+    
+    
+    <category term="日常知识" scheme="http://yoursite.com/tags/%E6%97%A5%E5%B8%B8%E7%9F%A5%E8%AF%86/"/>
+    
+  </entry>
   
   <entry>
     <title>编译原理之一</title>
@@ -451,31 +472,6 @@
     
     
     <summary type="html">&lt;p&gt;当初刚刚接触Ubuntu的时候,我就很喜欢Unity桌面的全局菜单整合功能,🎊&lt;br&gt;可以把窗口标题和全局菜单整合为一体.&lt;br&gt;这样就可以节省一行显示标题的空间.&lt;/p&gt;</summary>
-    
-    
-    
-    <category term="Linux之路" scheme="http://yoursite.com/categories/Linux%E4%B9%8B%E8%B7%AF/"/>
-    
-    
-    <category term="Arch" scheme="http://yoursite.com/tags/Arch/"/>
-    
-    <category term="Manjaro" scheme="http://yoursite.com/tags/Manjaro/"/>
-    
-    <category term="Linux" scheme="http://yoursite.com/tags/Linux/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Linux安装VirtualBox</title>
-    <link href="http://yoursite.com/2020/08/14/Linux%E5%AE%89%E8%A3%85VirtualBox/"/>
-    <id>http://yoursite.com/2020/08/14/Linux%E5%AE%89%E8%A3%85VirtualBox/</id>
-    <published>2020-08-14T08:47:55.000Z</published>
-    <updated>2020-10-31T12:50:24.248Z</updated>
-    
-    <content type="html"><![CDATA[<p>昨天，我下载好了kali镜像后.<br>今天,反手就是一个条命令把VirtualBox安装好了,<br>结果可想而知🤣</p><a id="more"></a><p>安装的VirtualBox可以运行,但是就是不能启动里面的虚拟系统.<br>这就很令我发愁,本来因为是BIOS没有开启虚拟化.<br>经过排查并不是这个原因.🤔<br>后来才知道,需要安装对应内核版本的安装包,才行</p><h2 id="确定Linux内核版本"><a href="#确定Linux内核版本" class="headerlink" title="确定Linux内核版本"></a>确定Linux内核版本</h2><ul><li>安装对应内核版本的安装,需要查询但前实习使用的内核.</li><li>使用uname -r 命令即可查询<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ sudo uname -r</span><br><span class="line">5.6.19-2-MANJARO</span><br></pre></td></tr></table></figure>表示需要安装linux内核版本为5.6</li></ul><h2 id="安装VirtualBox"><a href="#安装VirtualBox" class="headerlink" title="安装VirtualBox"></a>安装VirtualBox</h2><p>需要安装VirtualBox和扩展包,以及内核模块</p><ul><li>安装VirtualBox<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ sudo pacman -S virtualbox</span><br></pre></td></tr></table></figure></li><li>安装VirtualBox扩展包<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ sudo pacman -S virtualbox-ext-oracle</span><br></pre></td></tr></table></figure></li><li>安装内核模块<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ sudo pacman -S linux56-virtualbox-host-modules</span><br></pre></td></tr></table></figure><blockquote><p>Note: 安装内核模块,一定要和系统内核是一致的版本.不然可能无法启动.</p></blockquote></li></ul><h2 id="载入vboxdr模块"><a href="#载入vboxdr模块" class="headerlink" title="载入vboxdr模块"></a>载入vboxdr模块</h2><ul><li>重启系统模块会自动载入.</li><li>手动使用命令载入<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ sudo modprobe vboxdrv</span><br></pre></td></tr></table></figure>如果是其他衍生系统,大致安装步骤也和这个差不多.如果是初学者,注意包管理器的不同哦.🤞🤞🤞</li></ul><p>完成这些,就可以在Linux下面愉快的玩耍啦.🎊🎊🎊</p>]]></content>
-    
-    
-    <summary type="html">&lt;p&gt;昨天，我下载好了kali镜像后.&lt;br&gt;今天,反手就是一个条命令把VirtualBox安装好了,&lt;br&gt;结果可想而知🤣&lt;/p&gt;</summary>
     
     
     
