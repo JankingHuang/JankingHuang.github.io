@@ -6,7 +6,7 @@
   <link href="http://yoursite.com/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2021-02-27T05:24:52.686Z</updated>
+  <updated>2021-03-01T05:05:47.571Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -15,6 +15,70 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>计算机存储器</title>
+    <link href="http://yoursite.com/2021/03/01/%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%AD%98%E5%82%A8%E5%99%A8/"/>
+    <id>http://yoursite.com/2021/03/01/%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%AD%98%E5%82%A8%E5%99%A8/</id>
+    <published>2021-03-01T06:18:22.000Z</published>
+    <updated>2021-03-01T05:05:47.571Z</updated>
+    
+    <content type="html"><![CDATA[<p>续<code>输入输出设备之后</code>，内容还是很简单！</p><a id="more"></a><h2 id="存储器分类"><a href="#存储器分类" class="headerlink" title="存储器分类"></a>存储器分类</h2><p><img src="/img/image-20210301121513654.png" alt="image-20210301121513654"></p><p><img src="/img/image-20210301121652632.png" alt="image-20210301121652632"></p><h2 id="存储器的层次结构"><a href="#存储器的层次结构" class="headerlink" title="存储器的层次结构"></a>存储器的层次结构</h2><p><img src="/img/image-20210301122040191.png" alt="image-20210301122040191"></p><p><img src="/img/image-20210301122159399.png" alt="image-20210301122159399"></p><p>缓存-主存层次</p><ul><li>局部性原理(某个事件趋于聚集在一个较小的连续区域中)</li><li>在CPU与主存之间增加一层速度快(容量小)的Cache</li><li>解决主存速度不足问题</li></ul><p>主存-辅存层次</p><ul><li>局部性原理</li><li>在主存之外增加辅助存储器(磁盘、SD卡、U盘)</li><li>解决主存容量不足问题</li></ul><p>主存储器（内存）</p><p><img src="/img/image-20210301124029366.png" alt="image-20210301124029366"></p><ul><li>RAM(随机存取存储器：Random Access Memory)</li><li>RAM通过电容存储数据，必须隔一段时间刷新一次</li><li>如果掉电，那么一段时候后丢失所有数据</li></ul><p>辅助存储器（磁盘）</p><p><img src="/img/image-20210301124304580.png" alt="image-20210301124304580"></p><p>磁头调度算法</p><ul><li>先来先服务算法</li><li>最短寻道时间优先算法</li><li>扫描算法（电梯算法）</li><li>循环扫描算法</li></ul>]]></content>
+    
+    
+    <summary type="html">&lt;p&gt;续&lt;code&gt;输入输出设备之后&lt;/code&gt;，内容还是很简单！&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="计算机基本知识" scheme="http://yoursite.com/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%9F%BA%E6%9C%AC%E7%9F%A5%E8%AF%86/"/>
+    
+    
+    <category term="日常知识" scheme="http://yoursite.com/tags/%E6%97%A5%E5%B8%B8%E7%9F%A5%E8%AF%86/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>计算机输入输出设备</title>
+    <link href="http://yoursite.com/2021/03/01/%E8%AE%A1%E7%AE%97%E6%9C%BA%E8%BE%93%E5%85%A5%E8%BE%93%E5%87%BA%E8%AE%BE%E5%A4%87/"/>
+    <id>http://yoursite.com/2021/03/01/%E8%AE%A1%E7%AE%97%E6%9C%BA%E8%BE%93%E5%85%A5%E8%BE%93%E5%87%BA%E8%AE%BE%E5%A4%87/</id>
+    <published>2021-03-01T00:18:22.000Z</published>
+    <updated>2021-03-01T05:03:46.290Z</updated>
+    
+    <content type="html"><![CDATA[<p>我打算水一期，这里做一下简单的记录！</p><a id="more"></a><h2 id="常见的输入输出设备"><a href="#常见的输入输出设备" class="headerlink" title="常见的输入输出设备"></a>常见的输入输出设备</h2><h3 id="字符输入设备"><a href="#字符输入设备" class="headerlink" title="字符输入设备"></a>字符输入设备</h3><ul><li>键盘<ul><li>薄膜键盘</li><li>机械键盘</li><li>电容键盘</li></ul></li></ul><h3 id="图形输入设备"><a href="#图形输入设备" class="headerlink" title="图形输入设备"></a>图形输入设备</h3><ul><li>鼠标</li><li>数位板</li><li>扫描仪</li></ul><h3 id="图像输出设备"><a href="#图像输出设备" class="headerlink" title="图像输出设备"></a>图像输出设备</h3><ul><li>显示器<ul><li>CRT显示器</li><li>液晶显示器</li></ul></li><li>打印机</li><li>投影仪</li></ul><h2 id="输入输出接口的通用设计"><a href="#输入输出接口的通用设计" class="headerlink" title="输入输出接口的通用设计"></a>输入输出接口的通用设计</h2><ul><li>数据线： I/O设备与主机之间进行数据交换的传送线<ul><li>双向传输数据线</li><li>单向传输数据线</li></ul></li><li>状态线： IO设备状态向主机报告的信号线，查询设备的状态(正常连接、就绪、占用)</li><li>命令线： CPU向设备发送命令的型号线（读写信号、启动停止信号）</li><li>设备选择线： 主机选择I/O 设备进行操作的信号线(选择指定设备进行读写)</li></ul><h2 id="CPU与IO设备的通信"><a href="#CPU与IO设备的通信" class="headerlink" title="CPU与IO设备的通信"></a>CPU与IO设备的通信</h2><h3 id="程序中断"><a href="#程序中断" class="headerlink" title="程序中断"></a>程序中断</h3><p><img src="/img/image-20210301120930923.png" alt="image-20210301120930923"></p><ul><li><p>当外围IO设备就绪时，向CPU发出中断信号</p></li><li><p>CPU有专门的电路响应中断信号</p><p><strong>提供低速设备通知CPU的一种异步的方式，CPU可以在高速运转的同时兼顾低速设备</strong></p></li></ul><h3 id="DMA-直接存储器访问"><a href="#DMA-直接存储器访问" class="headerlink" title="DMA(直接存储器访问)"></a>DMA(直接存储器访问)</h3><p><img src="/img/image-20210301121148725.png" alt="image-20210301121148725"></p><ul><li>DMA直接连接主存与IO设备</li><li>DMA工作时不需要CPU的参与</li></ul><p><strong>可以提高CPU效率</strong></p>]]></content>
+    
+    
+    <summary type="html">&lt;p&gt;我打算水一期，这里做一下简单的记录！&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="计算机基本知识" scheme="http://yoursite.com/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%9F%BA%E6%9C%AC%E7%9F%A5%E8%AF%86/"/>
+    
+    
+    <category term="日常知识" scheme="http://yoursite.com/tags/%E6%97%A5%E5%B8%B8%E7%9F%A5%E8%AF%86/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>计算机总线</title>
+    <link href="http://yoursite.com/2021/02/28/%E8%AE%A1%E7%AE%97%E6%9C%BA%E6%80%BB%E7%BA%BF/"/>
+    <id>http://yoursite.com/2021/02/28/%E8%AE%A1%E7%AE%97%E6%9C%BA%E6%80%BB%E7%BA%BF/</id>
+    <published>2021-02-28T03:18:22.000Z</published>
+    <updated>2021-03-01T05:05:08.815Z</updated>
+    
+    <content type="html"><![CDATA[<p>提供了对外连接的接口</p><p>不同设备可以通过<code>USB(通用串行总线)</code>接口进行连接</p><a id="more"></a><p>连接的标准、促使外围设备接口的统一</p><p><img src="/img/image-20210301112423108.png" alt="image-20210301112423108"></p><p><strong>解决不同设备之间的通信问题</strong></p><p><img src="/img/image-20210301112627399.png" alt="image-20210301112627399"></p><p><img src="/img/image-20210301112714365.png" alt="image-20210301112714365"></p><h3 id="总线的分类"><a href="#总线的分类" class="headerlink" title="总线的分类"></a>总线的分类</h3><p><img src="/img/image-20210301112746459.png" alt="image-20210301112746459"></p><h4 id="片内总线"><a href="#片内总线" class="headerlink" title="片内总线"></a>片内总线</h4><p><img src="/img/image-20210301112951302.png" alt="image-20210301112951302"></p><ul><li>芯片内部的总线</li><li>寄存器与寄存器之间</li><li>寄存器与控制器、运算器之间</li></ul><p>高集成读芯片内部的信息传输</p><p>系统总线</p><p><img src="/img/image-20210301113013402.png" alt="image-20210301113013402"></p><ul><li>数据总线(一般与CPU位数相同)<ul><li>双向传输各个部件的数据信息</li><li>数据总线的位数（总线宽度）是数据总线的重要参数</li></ul></li><li>地址总线(地址总线位数 = n, 寻址范围： 0 ～ 2^n)<ul><li>制定源数据或目的数据在内存中的地址</li><li>地址总线的位数与存储单位元有关</li></ul></li><li>控制总线<ul><li>控制总线是用来发出各种控制信号的传输线</li><li>控制信号经由控制总线从一个组件发给另一个组件</li><li>控制总线可以监视不同组件之间的状态(就绪/未就绪)</li></ul></li></ul><p><strong>CPU、主内存、IO设备、各组件之间的信息传输线</strong></p><h2 id="总线的仲裁"><a href="#总线的仲裁" class="headerlink" title="总线的仲裁"></a>总线的仲裁</h2><p>不同设备之间使用总线的优先级别。</p><p><img src="/img/image-20210301113942111.png" alt="image-20210301113942111"></p><p><strong>为了解决总线使用权的冲突问题</strong></p><h2 id="方法"><a href="#方法" class="headerlink" title="方法"></a>方法</h2><h3 id="链式查询"><a href="#链式查询" class="headerlink" title="链式查询"></a>链式查询</h3><p><img src="/img/image-20210301114203233.png" alt="image-20210301114203233"></p><ul><li>电路复杂度低、仲裁方式简单</li><li>优先级低的设备难以获得总县使用权</li><li>对电路敏感</li></ul><h2 id="定时查询"><a href="#定时查询" class="headerlink" title="定时查询"></a>定时查询</h2><ul><li>仲裁控制其与设备编号并使用计数器累计基数</li><li>接收到仲裁信号后，往所有设备发出计数值</li><li>计数至与设备编号一致则获得总线使用权</li></ul><p><img src="/img/image-20210301114656230.png" alt="image-20210301114656230"></p><h2 id="独立请求"><a href="#独立请求" class="headerlink" title="独立请求"></a>独立请求</h2><ul><li>每个设备均有总线独立连接仲裁器</li><li>设备可单独向仲裁器发送请求和接受请求</li><li>当同时收到多个信号，仲裁器有权按优先级别分配使用权</li></ul><p><img src="/img/image-20210301114908031.png" alt="image-20210301114908031"></p><ul><li>响应速度快、优先顺序可动态改变</li><li>设备连接，总线控制复杂</li></ul>]]></content>
+    
+    
+    <summary type="html">&lt;p&gt;提供了对外连接的接口&lt;/p&gt;
+&lt;p&gt;不同设备可以通过&lt;code&gt;USB(通用串行总线)&lt;/code&gt;接口进行连接&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="计算机基本知识" scheme="http://yoursite.com/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%9F%BA%E6%9C%AC%E7%9F%A5%E8%AF%86/"/>
+    
+    
+    <category term="日常知识" scheme="http://yoursite.com/tags/%E6%97%A5%E5%B8%B8%E7%9F%A5%E8%AF%86/"/>
+    
+  </entry>
   
   <entry>
     <title>计算机基本知识</title>
@@ -410,79 +474,6 @@
     <category term="Leetcode" scheme="http://yoursite.com/tags/Leetcode/"/>
     
     <category term="算法" scheme="http://yoursite.com/tags/%E7%AE%97%E6%B3%95/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>1365.有多少小于当前数字的数字</title>
-    <link href="http://yoursite.com/2020/10/26/1365-%E6%9C%89%E5%A4%9A%E5%B0%91%E5%B0%8F%E4%BA%8E%E5%BD%93%E5%89%8D%E6%95%B0%E5%AD%97%E7%9A%84%E6%95%B0%E5%AD%97/"/>
-    <id>http://yoursite.com/2020/10/26/1365-%E6%9C%89%E5%A4%9A%E5%B0%91%E5%B0%8F%E4%BA%8E%E5%BD%93%E5%89%8D%E6%95%B0%E5%AD%97%E7%9A%84%E6%95%B0%E5%AD%97/</id>
-    <published>2020-10-26T13:55:35.000Z</published>
-    <updated>2020-10-28T12:09:21.143Z</updated>
-    
-    <content type="html"><![CDATA[<p>有几个月没有写博客，这段时间都是在刷leetcode去啦。今天刷完，才想起来我还有博客。🙃开启每日一题吧！ 加油🦤🦤🦤</p><a id="more"></a><h2 id="描述"><a href="#描述" class="headerlink" title="描述"></a>描述</h2><p>给你一个数组 nums，对于其中每个元素 nums[i]，请你统计数组中比它小的所有数字的数目。<br>换而言之，对于每个 nums[i] 你必须计算出有效的 j 的数量，其中 j 满足 j != i 且 nums[j] &lt; nums[i] 。<br>以数组形式返回答案。</p><h2 id="示例"><a href="#示例" class="headerlink" title="示例"></a>示例</h2><blockquote><p>输入：nums = [8,1,2,2,3]</p><p>输出：[4,0,1,1,3]</p><p>解释：</p><p>对于 nums[0]=8 存在四个比它小的数字：（1，2，2 和 3）。 </p><p>对于 nums[1]=1 不存在比它小的数字。</p><p>对于 nums[2]=2 存在一个比它小的数字：（1）。 </p><p>对于 nums[3]=2 存在一个比它小的数字：（1）。 </p><p>对于 nums[4]=3 存在三个比它小的数字：（1，2 和 2）。</p></blockquote><h2 id="解题思路"><a href="#解题思路" class="headerlink" title="解题思路"></a>解题思路</h2><ul><li>第一想法，是对整个nums数组进行排序.nums[i]的元素就会有i个比它小的元素(包含重复的，不符合题意要求，去要出去重复的)。<br>但是，后来仔细一看题目。发现，这样会打破输入数组的序列。</li><li>第二想法，是通过两个索引遍历整个数组。即每个元素和其他元素做比较，如果nums[i] &gt; nums[j]，则计数加一。比较完成后再存入结果数组中。</li><li>时间复杂度是O(n^2),空间复杂度为O(n);</li><li>代码如下：<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span></span></span><br><span class="line"><span class="class">&#123;</span></span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">    <span class="function"><span class="built_in">vector</span>&lt;<span class="keyword">int</span>&gt; <span class="title">smallerNumbersThanCurrent</span><span class="params">(<span class="built_in">vector</span>&lt;<span class="keyword">int</span>&gt; &amp;nums)</span></span></span><br><span class="line"><span class="function">    </span>&#123;</span><br><span class="line">        <span class="built_in">vector</span>&lt;<span class="keyword">int</span>&gt; res;</span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; nums.<span class="built_in">size</span>(); ++i)</span><br><span class="line">        &#123;</span><br><span class="line">            <span class="keyword">int</span> num = <span class="number">0</span>;</span><br><span class="line">            <span class="keyword">for</span> (<span class="keyword">int</span> j = <span class="number">0</span>; j &lt; nums.<span class="built_in">size</span>(); ++j)</span><br><span class="line">            &#123;</span><br><span class="line"></span><br><span class="line">                <span class="keyword">if</span> (nums.at(i) &gt; nums.at(j))</span><br><span class="line">                &#123;</span><br><span class="line">                    num++;</span><br><span class="line">                &#125;</span><br><span class="line">            &#125;</span><br><span class="line">            res.push_back(num);</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> res;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure></li></ul><h2 id="更优解法"><a href="#更优解法" class="headerlink" title="更优解法"></a>更优解法</h2><p>当我提交完代后，我看了一下评论区。<br>可谓是藏龙卧虎呀！！</p><ul><li>整个代码设计的非常巧妙,采用类似于桶排序的思路</li><li>先生成最大数组的大小的长度(题目给出了测试数据集的范围)</li><li>然后，对整个nums数组进行计数</li><li>在计算第i个元素，前i个的数量(arr 数组元素越靠后，对应nums里的元素越大)</li><li>在通过nums数组，获取与nums对应的元素值，存入vector。</li><li>代码如下：<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span> &#123;</span></span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">    <span class="function"><span class="built_in">vector</span>&lt;<span class="keyword">int</span>&gt; <span class="title">smallerNumbersThanCurrent</span><span class="params">(<span class="built_in">vector</span>&lt;<span class="keyword">int</span>&gt;&amp; nums)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">int</span> arr[<span class="number">101</span>];</span><br><span class="line">        <span class="built_in">memset</span>(arr, <span class="number">0</span>, <span class="keyword">sizeof</span>(arr));</span><br><span class="line">        <span class="comment">// 初始化计数桶</span></span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">auto</span> i : nums) &#123;</span><br><span class="line">            arr[i] ++;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="comment">// 累加处理计数桶，使得 arr[i] 表示比 i 小的数字的个数</span></span><br><span class="line">        <span class="keyword">int</span> cnt = <span class="number">0</span>;</span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt;= <span class="number">100</span>; i ++) &#123;</span><br><span class="line">            <span class="keyword">int</span> temp = arr[i];</span><br><span class="line">            arr[i] = cnt;</span><br><span class="line">            cnt += temp;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="built_in">vector</span>&lt;<span class="keyword">int</span>&gt; ret;</span><br><span class="line">        <span class="comment">// 遍历 nums，取出对应桶 arr[i] 里的结果即可</span></span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> i : nums) &#123;</span><br><span class="line">            ret.push_back(arr[i]);</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> ret;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>可以基于这个代码进行下一步的优化，但是时间复杂度大致还是O(n)级别。<br>方法是提前结束循环。😝</li></ul><p>今天的每日一题就到这里吧🎊</p>]]></content>
-    
-    
-    <summary type="html">&lt;p&gt;有几个月没有写博客，这段时间都是在刷leetcode去啦。今天刷完，才想起来我还有博客。🙃开启每日一题吧！ 加油🦤🦤🦤&lt;/p&gt;</summary>
-    
-    
-    
-    <category term="修炼之路" scheme="http://yoursite.com/categories/%E4%BF%AE%E7%82%BC%E4%B9%8B%E8%B7%AF/"/>
-    
-    
-    <category term="Leetcode" scheme="http://yoursite.com/tags/Leetcode/"/>
-    
-    <category term="算法" scheme="http://yoursite.com/tags/%E7%AE%97%E6%B3%95/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Konsole无法启动</title>
-    <link href="http://yoursite.com/2020/08/30/Konsole%E6%97%A0%E6%B3%95%E5%90%AF%E5%8A%A8/"/>
-    <id>http://yoursite.com/2020/08/30/Konsole%E6%97%A0%E6%B3%95%E5%90%AF%E5%8A%A8/</id>
-    <published>2020-08-30T03:11:45.000Z</published>
-    <updated>2020-10-26T14:32:37.098Z</updated>
-    
-    <content type="html"><![CDATA[<p>前几天，想实现打开终端自动显示系统相关信息。<br>于是我就在修改了 Konsole Profile 的 Command 加入了一个命令。<br>结果，konsole都打不开啦。</p><a id="more"></a><p>这就非常尴尬啦，需要改回Profile 需要先打开konsole 才行呀😝。<br>可是，现在就是打不开。</p><p>纵然寻他千百度 打开百度已掉进黑灯瞎火处。<br>这就是我不喜欢用百度的原因，啥都查不到。(啥都没有也敢叫百度呀！！)</p><p>“一切皆文件”,这条Linux哲学。在我脑海中呈现🤔。<br>我顿悟，我找到Konsole的配置文件，不久可以改回来啦吗？<br>根本就不需要图形界面的Profile呀！！</p><h2 id="Konsole-profile-配置文件"><a href="#Konsole-profile-配置文件" class="headerlink" title="Konsole profile 配置文件"></a>Konsole profile 配置文件</h2><ul><li>所在路径 ~/.locla/share/konsole/*.profile</li><li>修改Command 项里面参数(记得保存哦)</li><li>点击Konsole图标，就可以启动成功<br>这就ok啦</li></ul><blockquote><p>Note: 到这里Konsole 不能启动的问题就修复，下面完成我未尽的事业🤪</p></blockquote><h2 id="未尽事业🤣"><a href="#未尽事业🤣" class="headerlink" title="未尽事业🤣"></a>未尽事业🤣</h2><h3 id="新建一个文件"><a href="#新建一个文件" class="headerlink" title="新建一个文件"></a>新建一个文件</h3><ul><li>最后是.开头的隐藏文件</li><li>这个文件用来存放，终端启动需要自动执行的命令<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ touch .neofetchShow</span><br></pre></td></tr></table></figure></li></ul><h3 id="写入命令"><a href="#写入命令" class="headerlink" title="写入命令"></a>写入命令</h3><ul><li>把需要自动执行的命令，写入到文件中<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ <span class="built_in">echo</span> <span class="string">'neofetch'</span> &gt;&gt; .neofetchShow</span><br></pre></td></tr></table></figure><blockquote><p>neofetch 命令需要自己安装</p></blockquote></li></ul><h3 id="修改shell配置文件"><a href="#修改shell配置文件" class="headerlink" title="修改shell配置文件"></a>修改shell配置文件</h3><ul><li>默认shell 的配置文件为～/.bashrc</li><li>zsh配置文件为~/.zshrc</li><li>将文件路径写入配置文件<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">source</span> ~/.neofetchShow</span><br></pre></td></tr></table></figure></li><li>保存配置文件</li></ul><blockquote><p>Note: 以上上操作都在home目录下完成，如果配置失败了，请核对路径和需要启动的命令时候可以执行</p></blockquote>]]></content>
-    
-    
-    <summary type="html">&lt;p&gt;前几天，想实现打开终端自动显示系统相关信息。&lt;br&gt;于是我就在修改了 Konsole Profile 的 Command 加入了一个命令。&lt;br&gt;结果，konsole都打不开啦。&lt;/p&gt;</summary>
-    
-    
-    
-    <category term="Linux之路" scheme="http://yoursite.com/categories/Linux%E4%B9%8B%E8%B7%AF/"/>
-    
-    
-    <category term="Arch" scheme="http://yoursite.com/tags/Arch/"/>
-    
-    <category term="Manjaro" scheme="http://yoursite.com/tags/Manjaro/"/>
-    
-    <category term="Linux" scheme="http://yoursite.com/tags/Linux/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>永别ActiveWindowControl</title>
-    <link href="http://yoursite.com/2020/08/20/%E6%B0%B8%E5%88%ABActiveWindowControl/"/>
-    <id>http://yoursite.com/2020/08/20/%E6%B0%B8%E5%88%ABActiveWindowControl/</id>
-    <published>2020-08-20T06:22:51.000Z</published>
-    <updated>2020-10-26T14:33:18.382Z</updated>
-    
-    <content type="html"><![CDATA[<p>当初刚刚接触Ubuntu的时候,我就很喜欢Unity桌面的全局菜单整合功能,🎊<br>可以把窗口标题和全局菜单整合为一体.<br>这样就可以节省一行显示标题的空间.</p><a id="more"></a><p>可是后来,Ubuntu放弃啦Unity桌面,搞了Gnome桌面.👎<br>当初,其他衍生版搞Gnome桌面,他特立独行搞Unity现在有放弃.<br>这是我不喜欢Ubuntu的其中原因之一.</p><p>后来,在我的老电脑上,我已经转入了Arch魔教.<br>我是非常喜欢Arch的包管理器.这是非常Amazing.🤪</p><p>不过,现在在我的新电脑(Lenovo 小新13 Pro)已经使用Manjaro一段时间,<br>Manjaro是基于Arch开发的,Arch的一些优势基本上都有.<br>主要还是安装系统过程中,简便啦很多.</p><p>我使用的KDE桌面,是已经预装了全局菜单.不过还是不能实现Unity桌面的风格.<br>后来知道active Window Control 插件,可以实现这个功能,</p><p>我个人觉得这个东西不太友好,我几次配置都出现了桌面黑黑的(我也不知道是啥情况.).<br>而且,对于Window Title显示不太好,因为Title长度不一致,所以显示就有一些问题.<br>有强迫症的我,就能难忍受啦.😅</p><p>直到遇到了你,由<a href="https://github.com/psifidotos">psifidotos</a>开发的applet-window系列插件🤪<br>另外,提一下.这个位开发者处理Github issue 的速度是很快的.<br>由于我的无知(我对系统不熟悉),在Windos title 这个仓库中Open issue .没过多久他就回复我,<br>而且,非常友好的给出了解决我问题的方式.</p><h2 id="如何实现Unity桌面风格"><a href="#如何实现Unity桌面风格" class="headerlink" title="如何实现Unity桌面风格"></a>如何实现Unity桌面风格</h2><p>需要安装如下插件,目前这些都不在AUR仓库中,需要自己下载编译安装.</p><ul><li>applet-window-title</li><li>applet-window-buttons</li><li>applet-window-appmenu</li></ul><blockquote><p>Note: 编译过程,系统需要有cmake 和 extra-cmake-modules 环境 .  这两个可以直接安装.</p></blockquote><h2 id="安装插件"><a href="#安装插件" class="headerlink" title="安装插件"></a>安装插件</h2><h3 id="安装applet-window-title"><a href="#安装applet-window-title" class="headerlink" title="安装applet-window-title"></a>安装applet-window-title</h3><ul><li><p>克隆仓库</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git <span class="built_in">clone</span> https://github.com/psifidotos/applet-window-title.git</span><br></pre></td></tr></table></figure><p>该插件使用QML编写,可以直接装入.不需要编译</p></li><li><p>安装</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">cd</span> applet-window-title</span><br><span class="line">plasmapkg2 -i .</span><br></pre></td></tr></table></figure></li></ul><p>至此,安装完成🤞</p><h3 id="安装applet-window-buttons"><a href="#安装applet-window-buttons" class="headerlink" title="安装applet-window-buttons"></a>安装applet-window-buttons</h3><ul><li>克隆仓库<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git <span class="built_in">clone</span> https://github.com/psifidotos/applet-window-buttons.git</span><br></pre></td></tr></table></figure></li><li>编译安装<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">cd</span> applet-window-buttons</span><br><span class="line">sh install.sh</span><br></pre></td></tr></table></figure>shell 脚本需要知道完成,编译和安装工作.</li></ul><blockquote><p>Note: 一定要安装cmake和 extra-cmake-modules . 不然会无法编译</p></blockquote><p>至此,安装完成🤞</p><h3 id="安装applet-windows-appmenu"><a href="#安装applet-windows-appmenu" class="headerlink" title="安装applet-windows-appmenu"></a>安装applet-windows-appmenu</h3><p>如果,系统已经预装了,全局菜单. 这个可以不安装.<br>我就是使用系统预装的全局菜单的😝</p><p>如果没有就看下吧!!</p><ul><li>克隆仓库<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git <span class="built_in">clone</span> https://github.com/psifidotos/applet-window-appmenu.git</span><br></pre></td></tr></table></figure></li><li>编译安装<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">cd</span> applet-window-appmenu</span><br><span class="line">sh install.sh</span><br></pre></td></tr></table></figure>同样,shell会搞定一切.开发者还是蛮贴心的哈<del>~</del>👋</li></ul><p>到这就全部安装完成啦.</p><h2 id="后记"><a href="#后记" class="headerlink" title="后记"></a>后记</h2><p>安装完成,就可以愉快到需要的地方.添加插件啦.<br><img src="/img/min.png" alt="效果"><br><img src="/img/max.png" alt="效果"></p>]]></content>
-    
-    
-    <summary type="html">&lt;p&gt;当初刚刚接触Ubuntu的时候,我就很喜欢Unity桌面的全局菜单整合功能,🎊&lt;br&gt;可以把窗口标题和全局菜单整合为一体.&lt;br&gt;这样就可以节省一行显示标题的空间.&lt;/p&gt;</summary>
-    
-    
-    
-    <category term="Linux之路" scheme="http://yoursite.com/categories/Linux%E4%B9%8B%E8%B7%AF/"/>
-    
-    
-    <category term="Arch" scheme="http://yoursite.com/tags/Arch/"/>
-    
-    <category term="Manjaro" scheme="http://yoursite.com/tags/Manjaro/"/>
-    
-    <category term="Linux" scheme="http://yoursite.com/tags/Linux/"/>
     
   </entry>
   
